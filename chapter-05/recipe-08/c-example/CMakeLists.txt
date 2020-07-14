@@ -16,7 +16,7 @@ include(CheckCSourceRuns)
 
 set(_test_uuid
   "
-#include <uuid/uuid.h>
+#include <uuid2/uuid.h>
 
 int main(int argc, char * argv[]) {
   uuid_t uuid;

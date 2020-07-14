@@ -7,6 +7,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Eigen3 3.3 REQUIRED CONFIG)
+if(EIGEN3_FOUND)
+  message(STATUS "EIGEN3 Found!")
+  message(STATUS "EIGEN3_USE_FILE is ${EIGEN3_USE_FILE}")
+else()
+  message(STTUS f"ENGEN3 Not Found!")
+endif()
 
 include(CheckCXXCompilerFlag)
 

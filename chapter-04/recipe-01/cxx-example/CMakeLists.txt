@@ -28,6 +28,11 @@ enable_testing()
 
 # define tests
 add_test(
+        NAME bash_vesion_test
+        COMMAND ${BASH_EXECUTABLE} --version
+)
+
+add_test(
   NAME bash_test
   COMMAND ${BASH_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test.sh $<TARGET_FILE:sum_up>
   )

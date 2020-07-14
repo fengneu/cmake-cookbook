@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
-project(recipe-02 LANGUAGES Fortran C)
+project(recipe-02 LANGUAGES C) #Fortran C)
 
 # Get username
 execute_process(

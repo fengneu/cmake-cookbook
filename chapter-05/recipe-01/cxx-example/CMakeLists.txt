@@ -11,6 +11,8 @@ add_custom_target(unpack-eigen
   COMMAND
     ${CMAKE_COMMAND} -E tar xzf ${CMAKE_CURRENT_SOURCE_DIR}/eigen-eigen-5a0156e40feb.tar.gz
   COMMAND
+    ${CMAKE_COMMAND} -E remove_directory eigen-3.3.4
+  COMMAND
     ${CMAKE_COMMAND} -E rename eigen-eigen-5a0156e40feb eigen-3.3.4
   WORKING_DIRECTORY
     ${CMAKE_CURRENT_BINARY_DIR}

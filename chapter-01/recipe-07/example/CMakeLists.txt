@@ -6,10 +6,11 @@ project(recipe-07 LANGUAGES C CXX)
 
 # we default to Release build type
 if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
+  set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
 endif()
 
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
 
 message(STATUS "C flags, Debug configuration: ${CMAKE_C_FLAGS_DEBUG}")
 message(STATUS "C flags, Release configuration: ${CMAKE_C_FLAGS_RELEASE}")

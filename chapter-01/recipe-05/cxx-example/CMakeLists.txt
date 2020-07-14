@@ -5,15 +5,17 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(recipe-05 LANGUAGES CXX)
 
 # expose options to the user
-option(USE_LIBRARY "Compile sources into a library" OFF)
-
+#option(USE_LIBRARY "Compile sources into a library" OFF)
+option(USE_LIBRARY "Compile sources into a library" ON)
+#set(USE_LIBRARY ON)
+#
 message(STATUS "Compile sources into a library? ${USE_LIBRARY}")
 
 include(CMakeDependentOption)
 
 # second option depends on the value of the first
 cmake_dependent_option(
-  MAKE_STATIC_LIBRARY "Compile sources into a static library" OFF
+  MAKE_STATIC_LIBRARY "Compile sources into a static library" ON
   "USE_LIBRARY" ON
   )
 

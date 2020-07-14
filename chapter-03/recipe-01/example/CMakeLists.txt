@@ -6,6 +6,12 @@ project(recipe-01 LANGUAGES NONE)
 
 # detect python
 find_package(PythonInterp REQUIRED)
+message(STATUS "PYTHON_EXECUTABLE is ${PYTHON_EXECUTABLE}" )
+#if(PythonInterp FOUND)
+#
+#else()
+#
+#endif()
 
 # Execute a tiny Python script
 execute_process(

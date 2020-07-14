@@ -33,3 +33,6 @@
 # Python stuff
 *.pyc
 venv/
+
+# IDE dir
+.idea

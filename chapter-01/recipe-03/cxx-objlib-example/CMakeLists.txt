@@ -13,10 +13,10 @@ add_library(message-objs
 
 # this is only needed for older compilers
 # but doesn't hurt either to have it
-set_target_properties(message-objs
-  PROPERTIES
-    POSITION_INDEPENDENT_CODE 1
-  )
+#set_target_properties(message-objs
+#  PROPERTIES
+#    POSITION_INDEPENDENT_CODE 1
+#  )
 
 add_library(message-shared
   SHARED
@@ -38,4 +38,5 @@ set_target_properties(message-static
 
 add_executable(hello-world hello-world.cpp)
 
-target_link_libraries(hello-world message-static)
+#target_link_libraries(hello-world message-static)
+target_link_libraries(hello-world message-shared)

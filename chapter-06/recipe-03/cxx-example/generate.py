@@ -35,5 +35,4 @@ std::vector<int> & primes() {{
 }}
 """
 push_back = '\n'.join(['  primes.push_back({:d});'.format(x) for x in primes])
-output_file_name.write_text(
-    code.format(max_number=max_number, push_back=push_back))
+# output_file_name.write_text(code.format(max_number=max_number, push_back=push_back))

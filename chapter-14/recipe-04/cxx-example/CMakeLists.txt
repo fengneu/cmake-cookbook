@@ -9,6 +9,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Threads REQUIRED)
+message(STATUS "Threads is ${Threads_FOUND}")
 
 add_executable(example example.cpp)
 

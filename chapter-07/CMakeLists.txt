@@ -1,0 +1,11 @@
+# set minimum cmake version
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+set(CMAKE_VERBOSE_MAKEFILE on)
+#add_subdirectory(recipe-01/cxx-example)
+#add_subdirectory(recipe-02/example)
+#add_subdirectory(recipe-03/c-cxx-example)
+#add_subdirectory(recipe-04/cxx-example)
+#add_subdirectory(recipe-05/example)
+#add_subdirectory(recipe-06/example)
+#add_subdirectory(recipe-07/cxx-example)
+add_subdirectory(recipe-08/cxx-example)

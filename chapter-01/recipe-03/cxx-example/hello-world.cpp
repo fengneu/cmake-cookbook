@@ -4,11 +4,11 @@
 #include <iostream>
 
 int main() {
-  Message say_hello("Hello, CMake World!");
+  Message say_hello("Hello, CMake World for Message!");
 
   std::cout << say_hello << std::endl;
 
-  Message say_goodbye("Goodbye, CMake World");
+  Message say_goodbye("Goodbye, CMake World for main");
 
   std::cout << say_goodbye << std::endl;
 

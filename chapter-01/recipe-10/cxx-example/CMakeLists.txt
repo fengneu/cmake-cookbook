@@ -5,7 +5,8 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(recipe-10 LANGUAGES CXX)
 
 add_library(geometry
-  STATIC
+    STATIC
+    #  SHARED
     geometry_circle.cpp
     geometry_circle.hpp
     geometry_polygon.cpp

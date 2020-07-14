@@ -1,0 +1,8 @@
+# set minimum cmake version
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+set(CMAKE_VERBOSE_MAKEFILE on)
+#add_subdirectory(recipe-01/fortran-c-example)
+#add_subdirectory(recipe-02/cxx-example)
+#add_subdirectory(recipe-03/cxx-example)
+#add_subdirectory(recipe-04/cxx-example)
+add_subdirectory(recipe-05/cxx-example)
